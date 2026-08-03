@@ -52,7 +52,7 @@ export default function RootLayout({
               href="/articles"
               className="text-xs text-ink-soft transition-colors hover:text-navy"
             >
-              記事一覧
+              記事
             </Link>
           </div>
         </header>
@@ -66,7 +66,7 @@ export default function RootLayout({
               金利・審査条件は金融機関にご確認ください。
             </p>
             <p className="mt-3">
-              <Link href="/articles" className="hover:text-ink">記事一覧</Link>
+              <Link href="/articles" className="hover:text-ink">記事</Link>
               <span className="mx-2">|</span>
               <Link href="/about" className="hover:text-ink">このサイトについて</Link>
               <span className="mx-2">|</span>
