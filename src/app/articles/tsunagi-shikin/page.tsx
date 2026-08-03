@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { A8TextAd, ACT_WILL } from "@/components/A8TextAd";
 
 export const metadata: Metadata = {
   title: "売掛金はあるのに現金がない時の選択肢",
@@ -51,6 +52,13 @@ export default function Page() {
           高金利の借入が残っていると印象を悪くしうる
         </li>
       </ul>
+
+      <p>
+        なお、ビジネスローンには業種特化型もあります。たとえば運送業では、
+        燃料費や車両整備で急な出費が起きやすいことから、専用の商品が存在します。
+        運送業の方であれば選択肢の一つです。
+      </p>
+      <A8TextAd {...ACT_WILL} />
 
       <h2>選ぶ順番</h2>
       <ol>
