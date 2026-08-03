@@ -36,7 +36,9 @@
 html { color-scheme: light; }
 
 body {
-  background: var(--paper);
+  background-color: var(--paper);
+  /* 紙の質感。ベタ塗りの平板さを消す薄い粒 */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='3' seed='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.03'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
   color: var(--ink);
   font-family: var(--font-sans);
   font-feature-settings: "palt";
